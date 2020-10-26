@@ -6,6 +6,8 @@ inhibit_all_warnings!
 def app_pods
   # Tool to enforce Swift style and conventions
   pod 'SwiftLint'
+  # Firebase
+  pod 'Firebase/Analytics'
 end
 
 target 'ConfigCI' do

@@ -14,6 +14,7 @@
 		A3A2135B254674E200B14348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A2135A254674E200B14348 /* Assets.xcassets */; };
 		A3A2135E254674E200B14348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A2135C254674E200B14348 /* LaunchScreen.storyboard */; };
 		A3A21369254674E300B14348 /* ConfigCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A21368254674E300B14348 /* ConfigCITests.swift */; };
+		A3E678A82546CD81001994DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E678A72546CD81001994DA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A3A21364254674E300B14348 /* ConfigCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfigCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A21368254674E300B14348 /* ConfigCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigCITests.swift; sourceTree = "<group>"; };
 		A3A2136A254674E300B14348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E678A72546CD81001994DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D9DABC62C79ED70CD011DD /* Pods_ConfigCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConfigCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4964C5D40E8C30EFCA66741 /* Pods-ConfigCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigCITests.debug.xcconfig"; path = "Target Support Files/Pods-ConfigCITests/Pods-ConfigCITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,10 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				A3A21351254674E100B14348 /* AppDelegate.swift */,
-				A3A21355254674E100B14348 /* ViewController.swift */,
 				A3A2135A254674E200B14348 /* Assets.xcassets */,
-				A3A2135C254674E200B14348 /* LaunchScreen.storyboard */,
+				A3E678A72546CD81001994DA /* GoogleService-Info.plist */,
 				A3A2135F254674E200B14348 /* Info.plist */,
+				A3A2135C254674E200B14348 /* LaunchScreen.storyboard */,
+				A3A21355254674E100B14348 /* ViewController.swift */,
 			);
 			path = ConfigCI;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				A3A2134A254674E100B14348 /* Sources */,
 				A3A2134B254674E100B14348 /* Frameworks */,
 				A3A2134C254674E100B14348 /* Resources */,
+				401319B2464C664037BDF37C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +215,7 @@
 			files = (
 				A3A2135E254674E200B14348 /* LaunchScreen.storyboard in Resources */,
 				A3A2135B254674E200B14348 /* Assets.xcassets in Resources */,
+				A3E678A82546CD81001994DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +229,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		401319B2464C664037BDF37C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConfigCI/Pods-ConfigCI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConfigCI/Pods-ConfigCI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConfigCI/Pods-ConfigCI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A3E678A62546C698001994DA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
