@@ -1,0 +1,12 @@
+language: objective-c
+osx_image: xcode11
+xcode_workspace: ConfigCI.xcworkspace
+xcode_scheme: ConfigCI
+cache:
+  - bundler
+  - cocoapods
+before_install:
+  - bundle install
+  - bundle exec pod install --repo-update
+install:
+  - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
