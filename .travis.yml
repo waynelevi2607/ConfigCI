@@ -10,3 +10,8 @@ before_install:
   - bundle exec pod install --repo-update
 install:
   - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
+before_script:
+  - chmod a+x ./scripts/add-key.sh
+  - ./scripts/add-key.sh
+script:
+  - ./scripts/run
