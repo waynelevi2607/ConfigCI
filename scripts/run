@@ -1,0 +1,10 @@
+#Log debug branch
+BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH, TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST"
+
+if [ "$TRAVIS_BRANCH" == "main" -a "$TRAVIS_PULL_REQUEST" == "false" ]
+then
+  bundle exec fastlane deploy_app
+else
+  echo "DO NOTHING"
+fi
