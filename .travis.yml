@@ -1,6 +1,7 @@
 language: objective-c
 osx_image: xcode11
 xcode_workspace: ConfigCI.xcworkspace
+xcode_destination: platform=iOS Simulator,OS=13.6,name=iPhone 8
 xcode_scheme: ConfigCI
 cache:
   - bundler
