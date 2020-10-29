@@ -56,8 +56,3 @@ custom_rules:
     regex: '(@IBOutletCollection)'
     message: "IBOutletCollection is not permitted. "
     severity: error
-  non_empty_salt:
-    # regex: /Salt = "[0-9a-fA-F]{64,64}$/g
-    regex: 'Salt = ("")'
-    message: "Orchestration Salts must not be empty. Check environment variables for Sourcery"
-    severity: error
