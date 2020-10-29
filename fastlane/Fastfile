@@ -16,8 +16,53 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  desc "Deploy a new version of app"
+  lane :deploy_app do
+  	make_build_folder
+    build_app_with(
+      scheme: "ConfigCI",
+      configuration: "Release",
+      export_method: "development",
+      bundle: "com.khoavo.ios.ConfigCI",
+      provisioning: "provisioningkhoavoconfigci"
+    )
+    create_release_notes(format: 'Release: %h %s')
+    upload_firebase(groups: "Testers")
+  end
+
+  desc "Make build Folder"
+  private_lane :make_build_folder do
+    sh "mkdir -p ./build"
+  end
+
+  desc "Build app with options"
+  private_lane :build_app_with do |options|
+    build_app(
+      scheme: "#{options[:scheme]}",
+      configuration: "#{options[:configuration]}",
+      output_name: "ConfigCI.ipa",
+      silent: true,
+      clean: true,
+      skip_profile_detection: true,
+      export_method: "#{options[:export_method]}",
+      export_options: {
+        provisioningProfiles: { "#{options[:bundle]}": "#{options[:provisioning]}" }
+      }
+    )
+  end
+
+  desc "Upload Firebase"
+  private_lane :upload_firebase do |options|
+    firebase_app_distribution(
+      app: ENV["FIREBASE_APP_ID"],
+      groups: "#{options[:groups]}",
+      release_notes_file: "./fastlane/release_notes.txt",
+      firebase_cli_path: "/usr/local/bin/firebase"
+    )
+  end
+
+  desc "Create release notes"
+    private_lane :create_release_notes do |options|
+    sh "git log -1 --pretty=tformat:\"#{options[:format]}\" > release_notes.txt"
   end
 end
