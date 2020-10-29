@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		7EB19DDA2EE766937FA55B82 /* Pods_ConfigCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFE9D5F41DD95FF61F1C41E /* Pods_ConfigCITests.framework */; };
 		9342C5726440590B7BA0B3F3 /* Pods_ConfigCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D9DABC62C79ED70CD011DD /* Pods_ConfigCI.framework */; };
+		A338B2DF254AB515004A397C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A338B2DE254AB515004A397C /* GoogleService-Info.plist */; };
 		A3A21352254674E100B14348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A21351254674E100B14348 /* AppDelegate.swift */; };
 		A3A21356254674E100B14348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A21355254674E100B14348 /* ViewController.swift */; };
 		A3A2135B254674E200B14348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A2135A254674E200B14348 /* Assets.xcassets */; };
 		A3A2135E254674E200B14348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A2135C254674E200B14348 /* LaunchScreen.storyboard */; };
 		A3A21369254674E300B14348 /* ConfigCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A21368254674E300B14348 /* ConfigCITests.swift */; };
-		A3E678A82546CD81001994DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E678A72546CD81001994DA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 		2364BA65177741AA30F36B8E /* Pods-ConfigCI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigCI.debug.xcconfig"; path = "Target Support Files/Pods-ConfigCI/Pods-ConfigCI.debug.xcconfig"; sourceTree = "<group>"; };
 		6AF2F03A5ABE88BC7577F70C /* Pods-ConfigCI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigCI.release.xcconfig"; path = "Target Support Files/Pods-ConfigCI/Pods-ConfigCI.release.xcconfig"; sourceTree = "<group>"; };
 		7DFE9D5F41DD95FF61F1C41E /* Pods_ConfigCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConfigCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A338B2DE254AB515004A397C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3A2134E254674E100B14348 /* ConfigCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfigCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A21351254674E100B14348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A21355254674E100B14348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		A3A21364254674E300B14348 /* ConfigCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfigCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A21368254674E300B14348 /* ConfigCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigCITests.swift; sourceTree = "<group>"; };
 		A3A2136A254674E300B14348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3E678A72546CD81001994DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D9DABC62C79ED70CD011DD /* Pods_ConfigCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConfigCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4964C5D40E8C30EFCA66741 /* Pods-ConfigCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigCITests.debug.xcconfig"; path = "Target Support Files/Pods-ConfigCITests/Pods-ConfigCITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,12 +89,12 @@
 		A3A21350254674E100B14348 /* ConfigCI */ = {
 			isa = PBXGroup;
 			children = (
-				A3A21351254674E100B14348 /* AppDelegate.swift */,
-				A3A2135A254674E200B14348 /* Assets.xcassets */,
-				A3E678A72546CD81001994DA /* GoogleService-Info.plist */,
+				A338B2DE254AB515004A397C /* GoogleService-Info.plist */,
 				A3A2135F254674E200B14348 /* Info.plist */,
-				A3A2135C254674E200B14348 /* LaunchScreen.storyboard */,
+				A3A21351254674E100B14348 /* AppDelegate.swift */,
 				A3A21355254674E100B14348 /* ViewController.swift */,
+				A3A2135A254674E200B14348 /* Assets.xcassets */,
+				A3A2135C254674E200B14348 /* LaunchScreen.storyboard */,
 			);
 			path = ConfigCI;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 			files = (
 				A3A2135E254674E200B14348 /* LaunchScreen.storyboard in Resources */,
 				A3A2135B254674E200B14348 /* Assets.xcassets in Resources */,
-				A3E678A82546CD81001994DA /* GoogleService-Info.plist in Resources */,
+				A338B2DF254AB515004A397C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

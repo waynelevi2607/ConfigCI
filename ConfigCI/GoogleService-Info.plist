@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>347855679099-b2rq92i8s6jkl8cm34j0112njtkeas1n.apps.googleusercontent.com</string>
+	<string>408601723397-hu1rn79cb0b2kislmmqhs9qqmevnvui1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.347855679099-b2rq92i8s6jkl8cm34j0112njtkeas1n</string>
+	<string>com.googleusercontent.apps.408601723397-hu1rn79cb0b2kislmmqhs9qqmevnvui1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCPjrjae7Mc_BR0PLXb_stCYGWNZ4rseH4</string>
+	<string>AIzaSyDpF_01I7ZLgF1EHo4jqwi0fO5yBr3ojK8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>347855679099</string>
+	<string>408601723397</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>khoavo.ios.ConfigCI</string>
+	<string>com.khoavo.ios.ConfigCI</string>
 	<key>PROJECT_ID</key>
-	<string>configci-331d9</string>
+	<string>configci-d0c7e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>configci-331d9.appspot.com</string>
+	<string>configci-d0c7e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:347855679099:ios:de9d555a97394c3e653cde</string>
+	<string>1:408601723397:ios:951cf600382c2523e3526c</string>
 	<key>DATABASE_URL</key>
-	<string>https://configci-331d9.firebaseio.com</string>
+	<string>https://configci-d0c7e.firebaseio.com</string>
 </dict>
 </plist>
