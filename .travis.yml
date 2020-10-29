@@ -14,5 +14,5 @@ install:
 before_script:
   - chmod a+x ./scripts/add-key.sh
   - ./scripts/add-key.sh
-scripts:
   - bundle exec danger
+  
