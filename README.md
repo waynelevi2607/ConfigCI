@@ -7,7 +7,10 @@ Repo này được tạo ra mới mục đích học cách Config CI/CD cho 1 pr
 
 ## 📝 Nội dung
 
-### Section I: 
-### Section II:
+### Section I: Giới thiệu về khái niệm về CI/CD
+
+### Section II: Config CI/CD với TravisCI
+
+### Section III: Config CI/CD với BitriseCI
 
 ---
